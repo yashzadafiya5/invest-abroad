@@ -1,0 +1,280 @@
+/* Desktop Css */
+.main-section .main-banner {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.main-banner .container-fluid {
+    position: relative;
+    padding-bottom: 3rem;
+}
+
+.banner-section {
+    margin-top: 5rem;
+}
+
+.banner {
+    margin-top: -5rem !important;
+}
+
+
+
+/* header section=========================================== */
+.left-side-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../images/home1.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    border-radius: 30px;
+}   
+
+.left-column-uptext {
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 9px 8px rgba(16, 16, 16, 0.4),
+        1px 9px 8px rgba(16, 16, 16, 0.2),
+        1px 9px 8px rgba(16, 16, 16, 0.1),
+        1px 9px 8px rgba(16, 16, 16, 0.2);
+}
+
+/* ================================= text effect ==========================*/
+.typewriter h2 {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+        typing 3.5s steps(100, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    100% {
+        border-color: orange;
+    }
+}
+
+
+
+.left-side-img .left-column-uptext span {
+    display: inline-block;
+    position: relative;
+    animation: changeText 2s ease-in-out;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes changeText {
+    0% {
+        transform: translateY(0px);
+        transition: all 10s ease-in-out;
+    }
+
+    20% {
+        transform: translateY(-7px);
+        transition: all 100s ease-in-out;
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+
+/* ========================================================== */
+
+/* ========================================================== */
+
+.left-side-img h2 {
+    padding-top: 8rem !important;
+    font-size: 3rem;
+    font-weight: 700 !important;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left-side-img a {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #093b7d;
+    margin: 0 0.4rem;
+    color: white !important;
+    padding: 0.8rem;
+    font-size: 1.3rem !important;
+}
+
+.left-side-img a:hover {
+    border: none !important;
+    background-color: #ffffff !important;
+    border-radius: 0 15px 0 15px;
+    color: #332619 !important;
+    box-shadow: 2px 2px 2px 2px #093b7d, 2px 2px 2px 2px white;
+}
+
+.right-side-img {
+    background-image: url(../images/hero-section-2.jpg );
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+    animation: changeImage 30s linear infinite;
+    border-radius: 30px;
+}
+
+@keyframes changeImage {
+    0% {
+        background-image: url(../images/home1.jpg);
+    }
+
+    25% {
+        background-image: url(../images/hero-section-2.jpg);
+    }
+
+    50% {
+        background-image: url(../images/home.jpg);
+    }
+
+    75% {
+        background-image: url(../images/hero-section-2.jpg);
+    }
+
+    100% {
+        background-image: url(../images/home1.jpg);
+    }
+
+
+}
+
+
+/* --------------------------- mobile view ----------------------------  */
+
+@media only screen and (min-width:280px) and (max-width:500px) {
+    .main-section .main-banner {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .right-part {
+        order: 1;
+    }
+
+    .left-part {
+        order: 2;
+    }
+
+    .left-side-img {
+        text-align: start !important;
+    }
+
+    .left-side-img {
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .right-side-img {
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: 100% 100%;
+    }
+
+    .left-side-img h2 {
+        padding-top: 3.9rem !important;
+        font-size: 1.8rem;
+        font-weight: 700 !important;
+        text-align: start !important;
+        margin-left: 0.8rem !important;
+    }
+
+    .left-side-img a {
+        background-color: #093b7d;
+        margin: 0 0.2rem;
+        color: white !important;
+        padding: 0.4rem;
+        font-size: 0.7rem !important;
+        margin-left: 0.8rem !important;
+    }
+
+}
+
+@media only screen and (min-width:501px) and (max-width:768px) {
+    .right-part {
+        order: 1;
+    }
+
+    .left-part {
+        order: 2;
+    }
+
+    .main-section .main-banner {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .left-side-img {
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .left-side-img a {
+        background-color: #093b7d;
+        margin: 0 0rem;
+        color: white !important;
+        padding: 0.2rem;
+        font-size: 1rem !important;
+    }
+
+    .right-side-img {
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: 100% 100%;
+    }
+
+    .left-side-img h2 {
+        padding-top: 5rem !important;
+        font-size: 2rem;
+    }
+
+
+}
+
+@media only screen and (min-width:768px) and (max-width:1370px) {
+
+
+    .main-section .main-banner {
+        padding-top: 4rem;
+        padding-bottom: 1rem;
+    }
+}
+
+/* ============================================= */
