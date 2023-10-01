@@ -7,7 +7,7 @@
 
 
  .single-listing-container .info {
-     background: #F5F6F5;
+     background: #093b7d;
      padding: 15px;
      border-radius: 7px;
      margin-bottom: 2rem;
@@ -18,11 +18,11 @@
      font-size: 1.3rem;
      font-weight: 600;
      padding-top: 0.6rem;
-     color: black !important;
+     color: white !important;
  }
 
  .single-listing-container .img-grid{
-    background: #F5F6F5;
+    background: #093b7d;
     padding: 2rem;
     border-radius: 7px;
  }
@@ -53,12 +53,13 @@
  }
 
  .single-listing-container .address .small-title {
-     border-right: 1px solid black;
+     border-right: 1px solid white;
      padding-right: 0.5rem;
      min-height: 3.7rem;
      margin-left: 0rem;
      margin-right: 0rem;
      padding: 0 20px;
+     color: white;
  }
 
  .single-listing-container .address .property-decription {
@@ -223,7 +224,7 @@
 
 
                 .single-listing-container .img-grid {
-                    background: #F5F6F5;
+                    background: #093b7d;
                     padding: 1rem;
                     border-radius: 7px;
                 }
@@ -247,7 +248,7 @@
 
 
      .single-listing-container .info {
-         background: #F5F6F5;
+         background: #093b7d;
          padding: 10px;
      }
 
@@ -257,7 +258,7 @@
          font-size: 1.3rem;
          font-weight: 500;
          display: unset !important;
-         color: black !important;
+         color: white !important;
      }
 
 

@@ -7,11 +7,11 @@
     text-align: left;
 }
 .home-improment i{
-    color: #c0701f;
+    color: #093b7d;
     font-size: 1rem !important;
 }
 .home-service-line{
-    border-bottom: 2px solid #c0701f;
+    border-bottom: 2px solid #093b7d;
 }
 
 .home-service h5{
@@ -34,7 +34,7 @@
     width: 20%;
     top: -10px;
     left: -10px;
-    background-color: #c0701f;
+    background-color: #093b7d;
     z-index: 1;
  }
  
@@ -47,7 +47,7 @@
     width: 20%;
     bottom: -10px;
     right: -10px;
-    background-color: #c0701f;
+    background-color: #093b7d;
     z-index: 1;
  }
  .home-service h5{

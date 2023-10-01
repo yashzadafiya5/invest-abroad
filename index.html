@@ -50,7 +50,8 @@
 </head>
 
 <body>
-    
+    <div class="cursor">
+    </div>
     <!-- What's App CTA -->
     <div id="whatsapp">
         <a href="https://wa.me/+12262601467" target="_blank"><img
@@ -68,43 +69,46 @@
                         <img src="static/images/logo.png" alt="logo" />
                     </div>
                 </a>
-                <div class="menu-section nav">
-                    <ul class="m-0 p-0 menu">
-                        <!-- <a href="index.html" class="text-decoration-none text-dark"><li class="active mx-1">Home</li></a> -->
-                        <a href="index.html#about">
-                            <li>About us<span class="text-dark" style="font-size: 1.5rem;"> |</span></li>
-                        </a>
-                        <a href="./properties-management.html">
-                            <li>Property Management<span class="text-dark" style="font-size: 1.5rem;"> |</span></li>
-                        </a>
-                        <a href="./listing.html">
-                            <li>Rentals<span class="text-dark" style="font-size: 1.5rem;"> |</span></li>
-                        </a>
-                        <a href="./home-improments.html">
-                            <li>Home Improments<span class="text-dark" style="font-size: 1.5rem;"> |</span></li>
-                        </a>
-                        <a href="./exterior-work.html">
-                            <li>Exterior Work<span class="text-dark" style="font-size:1.5rem;"> |</span></li>
-                        </a>
-                        <a href="blogs-list.html">
-                            <li>Blogs<span class="text-dark" style="font-size: 1.5rem;"> |</span></li>
-                        </a>
-                        <a href="index.html#contactUs">
-                            <li>Contact us<span style="font-size: 1.5rem; color: #f6f8f8;"> |</span></li>
-                        </a>
-                    </ul>
-                </div>
-                <div class="menu-icon ">
-                    <div class="position-relative w-100 h-100">
-                        <span id="span1">
-                            <div class="animateline"></div>
-                        </span>
-                        <span id="span2">
-                            <div class="animateline"></div>
-                        </span>
-                        <span id="span3">
-                            <div class="animateline"></div>
-                        </span>
+                <div class="d-flex justify-content-center">
+                    <div class="menu-section nav">
+                        <ul class="m-0 p-0 menu">
+                            <!-- <a href="index.html" class="text-decoration-none text-dark"><li class="active mx-1">Home</li></a> -->
+                            <a href="index.html#about">
+                                <li>About us<span class="text-dark" style="font-size: 1.5rem;"> |</span></li>
+                            </a>
+                            <a href="./properties-management.html">
+                                <li>Property Management<span class="text-dark" style="font-size: 1.5rem;"> |</span></li>
+                            </a>
+                            <a href="./listing.html">
+                                <li>Rentals<span class="text-dark" style="font-size: 1.5rem;"> |</span></li>
+                            </a>
+                            <!--
+                            <a href="./home-improments.html">
+                                <li>Home Improments<span class="text-dark" style="font-size: 1.5rem;"> |</span></li>
+                            </a>
+                            <a href="./exterior-work.html">
+                                <li>Exterior Work<span class="text-dark" style="font-size:1.5rem;"> |</span></li>
+                            </a> -->
+                            <a href="blogs-list.html">
+                                <li>Blogs<span class="text-dark" style="font-size: 1.5rem;"> |</span></li>
+                            </a>
+                            <a href="index.html#contactUs">
+                                <li>Contact us<span style="font-size: 1.5rem; color: #f6f8f8;"> |</span></li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="menu-icon">
+                        <div class="position-relative w-100 h-100">
+                            <span id="span1">
+                                <div class="animateline"></div>
+                            </span>
+                            <span id="span2">
+                                <div class="animateline"></div>
+                            </span>
+                            <span id="span3">
+                                <div class="animateline"></div>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -390,7 +394,7 @@
                                     <a href="blogs-list.html">
                                         <div class="img-box">
                                             <div class="image">
-                                                <img src="static/images/b3.png" alt="">
+                                                <img src="static/images/b2.png" alt="">
                                             </div>
                                             <div class="text">
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -655,11 +659,10 @@
 
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="static/js/custom.js"></script>
-
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-
         var swiper2 = new Swiper('.blogs-swiper', {
             slidesPerView: 'auto',
             centeredSlides: true,
@@ -670,26 +673,12 @@
             simulateTouch: true,
             loopFillGroupWithBlank: false,
             grabCursor: true,
-            //touchStartPreventDefault: false,
-        })
-
+        });
     </script>
-
-
-
 
     <script>
         AOS.init();
     </script>
-    <!-- <script>
-        $(document).ready(function(){
-          $('li').on('click', function(){
-            $(this).siblings().removeClass('active');
-            $(this).addClass('active');
-          })
-        })
-    </script> -->
-  
 
     <script>
         function services(service) {
@@ -698,23 +687,22 @@
             } else {
                 $("#property-type-div").addClass("d-none");
             }
-
         }
     </script>
 
-    <!-- cursor javascript -->
+    <!-- Your JavaScript code for the cursor -->
     <script>
         const cursor = document.querySelector(".cursor");
 
         window.addEventListener("mousemove", (e) => {
             cursor.style.left = e.pageX - 13 + "px";
             cursor.style.top = e.pageY - 13 + "px";
-            cursor.setAttribute("data-fromTop", cursor.offsetTop - scrollY);
+            cursor.setAttribute("data-fromTop", cursor.offsetTop - window.scrollY);
         });
 
         document.addEventListener("scroll", () => {
             const fromTop = parseInt(cursor.getAttribute("data-fromTop"));
-            cursor.style.top = scrollY + fromTop + "px";
+            cursor.style.top = window.scrollY + fromTop + "px";
         });
 
         document.addEventListener("click", () => {
@@ -724,50 +712,41 @@
                 cursor.classList.remove("cursor-click");
             }, 500);
         });
-        // ========================
 
         $(".hover-item").mouseenter(function () {
-            $(".cursor").addClass("cursor-hover");
-        });
-        $(".hover-item").mouseleave(function () {
-            $(".cursor").removeClass("cursor-hover");
+            cursor.classList.add("cursor-hover");
         });
 
-        // ==========================
+        $(".hover-item").mouseleave(function () {
+            cursor.classList.remove("cursor-hover");
+        });
 
         $(".hover-white").mouseenter(function () {
-            $(".cursor").addClass("cursor-white");
-        });
-        $(".hover-white").mouseleave(function () {
-            $(".cursor").removeClass("cursor-white");
+            cursor.classList.add("cursor-white");
         });
 
-        // ======================
+        $(".hover-white").mouseleave(function () {
+            cursor.classList.remove("cursor-white");
+        });
 
         $(".hover-blue").mouseenter(function () {
-            $(".cursor").addClass("cursor-hover-blue");
+            cursor.classList.add("cursor-hover-blue");
         });
+
         $(".hover-blue").mouseleave(function () {
-            $(".cursor").removeClass("cursor-hover-blue");
+            cursor.classList.remove("cursor-hover-blue");
         });
+
         $(".hover-green").mouseenter(function () {
-            $(".cursor").addClass("cursor-hover-green");
+            cursor.classList.add("cursor-hover-green");
         });
+
         $(".hover-green").mouseleave(function () {
-            $(".cursor").removeClass("cursor-hover-green");
-        })
+            cursor.classList.remove("cursor-hover-green");
+        });
     </script>
 
-    <!-- ======================= AOS js ============================ -->
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-   
+    <!-- Add any additional scripts your page requires -->
 
 
 </body>

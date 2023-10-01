@@ -31,7 +31,7 @@ label:focus,
 
 
 .listing-container a {
-    background: #C79B70;
+    background: #093b7d;
     text-decoration: none;
     color: white;
     border-radius: 6px;
@@ -59,7 +59,7 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0
 
 .listing-container a:hover {
     color: black;
-    background: #C79B70;
+    background: #093b7d;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     font-weight: 500;
 }
@@ -68,7 +68,7 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0
     margin-top: 1rem !important;
   }
   .form-main-containt form{
-    border: 2px solid #C79B70;
+    border: 2px solid #093b7d;
     padding: 2rem 2rem !important;
     border-radius: 10px;
    
@@ -151,7 +151,7 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0
 }
 @media only screen and (min-width:769px) and (max-width:1000px){
     .form-main-containt form{
-        border: 2px solid #C79B70;
+        border: 2px solid #093b7d;
         padding: 2rem 0.6rem !important;
         border-radius: 10px;
        
