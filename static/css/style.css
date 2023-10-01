@@ -1030,7 +1030,7 @@ only screen and (max-width: 480px) {
 @media screen and (max-width: 1266px) {
   .main-section .header .menu-section {
     position: absolute;
-    background: #a09f9f;
+    background: white;
     width: 100%;
     top:90px;
     border-radius: 20px;
@@ -1060,7 +1060,7 @@ only screen and (max-width: 480px) {
 
 @media screen and (max-width: 1266px) and (max-width: 443px) {
   .main-section .header .menu-section {
-    top: 50px;
+    top: 100px;
   }
 }
 
